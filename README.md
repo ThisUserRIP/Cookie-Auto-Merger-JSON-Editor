@@ -53,3 +53,19 @@ An example of leaderboard behavior under unvalidated state submission. The clien
 1. **The Hook**: The engine overrides the global communication channels to look for specific API endpoints (e.g., `/api/v1/init`).
 2. **The Patch**: Once intercepted, the incoming JSON object is structural-mapped. Values, prices, and grid arrays are mutated locally before execution.
 3. **The Simulation**: The UI layer continuously scans the DOM container, pairs identical entity classes based on strict type match, and fires synthetically generated sequence events (`touchstart` -> `pointerdown` -> `touchmove` -> `pointerup` -> `click`).
+
+---
+
+## 🛠️ Installation & Execution
+
+To run this Proof-of-Concept engine in your local browser environment for testing purposes, follow these steps:
+
+1. **Install a Userscript Manager**: Download and install a verified browser extension such as [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/).
+2. **Add the Script**: 
+   * Click on the extension icon in your browser and select **Create a new script**.
+   * Copy the entire source code from the `engine.user.js` file in this repository.
+   * Paste it into the editor and save (`Ctrl + S`).
+3. **Launch the Web Application**: Open the target application URL in your browser.
+4. **Initialize the Control Panel**: 
+   * Once the application loads, the embedded panel should automatically render on the right side of the screen.
+   * Alternatively, press the **`F2`** key or the tilde key (**`` ` ``**) on your keyboard to toggle the panel's visibility.
