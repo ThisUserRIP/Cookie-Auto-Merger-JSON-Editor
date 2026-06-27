@@ -26,19 +26,19 @@ This project showcases how client-side state manipulation (via API interception)
 
 ### 1. In-Game Automation & State Overriding
 Demonstration of the target interface where elements are manipulated. The engine monitors and automatically handles internal structural components on the web canvas.
-![Game Interface](2.jpg)
+![Game Interface](image/2.jpg)
 
 ### 2. Client-Side API Interception UI
 The injected embedded panel (`Cookie Merger v2`) functioning inside the browser environment. It enables or disables real-time client-side hot-patching, automated merging, buying loops, and displays intercepted JSON objects directly in the text area.
-![Control Panel UI](1.png)
+![Control Panel UI](image/1.png)
 
 ### 3. Structural Matrix Exploitation (Plate Values)
 Visual representation of successful structural local variable patching. The field validation is overridden, demonstrating how client-side state mutations can force arbitrary values (e.g., multiplier grids or structural IDs forced to `9999`).
-![Matrix Overriding](4.jpg)
+![Matrix Overriding](image/4.jpg)
 
 ### 4. Leaderboard Consistency (Client-to-Server Trust)
 An example of leaderboard behavior under unvalidated state submission. The client-side calculated value is accepted by the platform's core architecture due to missing server-side cryptographic signatures or multi-step transaction logs.
-![Leaderboard Sync](3.png)
+![Leaderboard Sync](image/3.png)
 
 ---
 
